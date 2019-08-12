@@ -1,0 +1,108 @@
+<bp-button-group>
+        <button bpButton>1</button>
+        <button bpButton>2</button>
+        <button bpButton>3</button>
+</bp-button-group>
+
+<bp-button-toolbar>
+        <bp-button-group>
+                <button bpButton>button 1</button>
+                <button bpButton>button 2</button>
+                <button bpButton>button 3</button>
+        </bp-button-group>
+        <bp-button-group>
+                <button bpButton>button 4</button>
+                <button bpButton>button 5</button>
+                <button bpButton>button 6</button>
+        </bp-button-group>
+</bp-button-toolbar>
+
+<!-- Nesting -->
+<bp-button-group>
+        <button bpButton>button 1</button>
+        <button bpButton>button 2</button>
+        <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                        <a class="dropdown-item" href="#">Dropdown link</a>
+                </div>
+        </div>
+</bp-button-group>
+
+
+
+<div>Small Button Group</div>
+<bp-button-group size="small">
+        <button bpButton>button 1</button>
+        <button bpButton>button 2</button>
+        <button bpButton>button 3</button>
+</bp-button-group>
+<div>Default Button Group</div>
+<bp-button-group size="default">
+        <button bpButton>button 4</button>
+        <button bpButton>button 5</button>
+        <button bpButton>button 6</button>
+</bp-button-group>
+<div>Large Button Group</div>
+<bp-button-group size="large">
+        <button bpButton>button 7</button>
+        <button bpButton>button 8</button>
+        <button bpButton>button 9</button>
+</bp-button-group>
+
+<div class="mb-2">Button Toolbar with 3 Button Groups</div>
+<bp-button-toolbar>
+        <bp-button-group>
+                <button bpButton>1</button>
+                <button bpButton>2</button>
+                <button bpButton>3</button>
+        </bp-button-group>
+        <bp-button-group>
+                <button bpButton color="danger">4</button>
+                <button bpButton color="danger">5</button>
+        </bp-button-group>
+        <bp-button-group>
+                <button bpButton color="warning">6</button>
+        </bp-button-group>
+</bp-button-toolbar>
+
+<div class="mt-4 mb-2">Button Toolbar with 2 Button Groups and 1 Input Group</div>
+<bp-button-toolbar>
+        <bp-button-group>
+                <button bpButton>1</button>
+                <button bpButton>2</button>
+                <button bpButton>3</button>
+        </bp-button-group>
+        <bp-button-group>
+                <button bpButton color="danger">4</button>
+                <button bpButton color="danger">5</button>
+        </bp-button-group>
+        <div class="input-group">
+                <div class="input-group-prepend">
+                        <div class="input-group-text bg-info text-light" id="btnGroupAddon">@</div>
+                </div>
+                <input type="text" class="form-control" placeholder="Input group example">
+        </div>
+</bp-button-toolbar>
+
+<div class="mt-4 mb-2">
+        Button Toolbar with 1 Button Group and 1 Input Group. <br />
+        Here we've used "justify-content-between" utility (Bootstrap css class) to arrange childreen of Button Toolbar.
+</div>
+<bp-button-toolbar class=" justify-content-between">
+        <bp-button-group>
+                <button bpButton>1</button>
+                <button bpButton>2</button>
+                <button bpButton>3</button>
+        </bp-button-group>
+        <div class="input-group">
+                <div class="input-group-prepend">
+                        <div class="input-group-text bg-info text-light" id="btnGroupAddon">@</div>
+                </div>
+                <input type="text" class="form-control" placeholder="Input group example">
+        </div>
+</bp-button-toolbar>
