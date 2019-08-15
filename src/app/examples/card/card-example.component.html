@@ -1,19 +1,49 @@
 <div class="row">
-        <div class="col-md-3">
+        <div class="col-12 col-sm-4">
                 <bp-card>
-                        <bp-card-header>Card header</bp-card-header>
-                        <img bpCardImage src="../assets/img/i1.png" position="cap" />
-                        <bp-card-image-overlay>
-                                <label class="card-title">Title</label>
-                                <h6 bpCardSubtitle>Subtitle</h6>
-                        </bp-card-image-overlay>
+                        <bp-card-header>Card Header</bp-card-header>
                         <bp-card-body>
-                                <label class="card-title">Title</label>
-                                <h6 bpCardSubtitle>Subtitle</h6>
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="mt-2">
+                                        this is a Card with a header, body and footer.
+                                </p>
                         </bp-card-body>
-                        <bp-card-footer>
-                                Card footer
-                        </bp-card-footer>
+                        <bp-card-footer>Card Footer</bp-card-footer>
+                </bp-card>
+
+        </div>
+        <div class="col-12 col-sm-4">
+                <bp-card>
+                        <img bpCardImage src="../assets/img/card-image-cap.png" position="cap" />
+                        <bp-card-body>
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="mt-2">
+                                        this is a Card with a title and a top image cap. to add an image cap, use
+                                        bpCardImage directive.
+                                </p>
+                        </bp-card-body>
                 </bp-card>
         </div>
+        <div class="col-12 col-sm-4">
+                <bp-card>
+                        <bp-card-body>
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="mt-2">
+                                        this is a Card with a title and a bottom image cap. to add an image cap, use
+                                        bpCardImage directive.
+                                </p>
+                        </bp-card-body>
+                        <img bpCardImage src="../assets/img/card-image-cap.png" position="cap" />
+                </bp-card>
+        </div>
+
+        <div class="col-12 col-sm-4">
+                <bp-card>
+                        <bp-card-body>
+                                this is a simple Card with a body and nothing else!
+                        </bp-card-body>
+                </bp-card>
+        </div>
+
 </div>
+
